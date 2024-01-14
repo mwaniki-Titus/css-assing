@@ -1,180 +1,117 @@
-* {
-    padding: 0;
+
+*{
+    box-sizing: border-box;
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    padding: 0;
 }
+body {
+    font-family: Arial, Helvetica, sans-serif;
 
-/* Navbar Styles */
-.navbar {
+}
+.flex-container {
+    height: 100%;
     width: 100%;
-    position: fixed;
-    display: flex; 
-    top: 0;
+   
 }
-
-label {
-    font-size: 35px; 
-    font-weight: bold;
-    padding-left: 120px;
-    color: rgb(0, 0, 0);
-}
-
-nav { 
+.item{
     width: 100%;
-    height: 200px;
-    flex: 1;
-    padding-top: 20px;
-    padding-right: 100px;
-    align-items: center;
-    margin-bottom: 200px;
-}
-
-nav ul {
-    float: right;
-}
-
-nav ul li {
-    display: inline-block;
-    position: relative;
-    margin-right: 60px;
-}
-
-nav ul li a {
-    color: hsl(233, 8%, 79%);
-    font-size: 20px;
-    display: block;
-    text-decoration: none;
-}
-
-/* Main Container Styles */
-.main {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Grid Container Styles */
-.grid-container {
-    width: 80vw;
-    height: 80vh;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 20px;
-    grid-template-areas: "header header header"
-                         "image content content"
-                         "footer footer footer";
-}
-
-/* Image Styles */
-.image {
-    margin-top: 10px;
-    border-radius: 5%;
-    height: 250px;
-    width: 500px;
-    grid-area: image;
-}
-
-/* Content Section Styles */
-.one {
-    display: flex;
-    grid-area: content;
-}
-
-.h1 {
-    width: 50%;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.web {
+    /* height: 100px; */
+    /* background: blue; */
     color: hsl(236, 13%, 42%);
-    width: 50%;
-}
-
-.web p {
-    padding-bottom: 30px;
-    font-size: 18px;
-}
-
-.web > button {
-    font-size: 15px;
-    color: white;
-    height: 40px;
-    width: 180px;
-    border: none;
-    margin-top: 20px;
-    background-color: hsl(5, 85%, 63%);
-}
-
-/* New Section Styles */
-.new {
-    grid-area: content;
-    background-color: hsl(240, 100%, 5%);
-    color: white;
-    text-align: left;
-    margin-top: 10px;
-    padding: 20px;
-    width: 80%;
-}
-
-.new h3 {
-    font-size: 25px;
-    padding-bottom: 20px;
-    color: hsl(35, 77%, 62%);
-    font-weight: bold;
-}
-
-.new p {
-    font-size: 15px;
-    color: hsl(233, 8%, 79%);
-}
-
-.new > h4 {
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.cars, .Atistry, .VC {
-    padding-top: 10px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid white;
-}
-
-/* Footer Styles */
-.footer {
+    margin: 10px;
     display: flex;
-    grid-area: footer;
-    margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.item ul {
+    display: flex;
+} 
+.item ul li {
+    margin-left:20px ;
+    margin-right: 20px;
+
 }
 
-.Retro, .lap, .game {
+
+/* .item:nth-of-type(1){
+    align-self: first baseline;
+    order: 1;
+    flex-basis: 200px; */
+/* } */
+/* .item:nth-of-type(2){
+    /* align-self: start; */
+    /* order: 1;
+    flex-grow: 2;
+} */ 
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    align-self: flex;
     display: flex;
 }
+.item4 {
+    display: flex;
+    align-items: flex-end;
+}
+.top {
+    display: flex;
+    margin: 10px;
+    
+}
+.below{
+    display: flex;
+    margin: 10px;
+    width: 800px;
+    height: 100px;
+    margin: 20px;
+    justify-content: space-around;
 
-.retropc {
-    flex-direction: column;
-    padding-left: 20px;
 }
 
-.retropc h4 {
-    color: hsl(240, 100%, 5%);
-    font-size: 20px;
-    font-weight: bold;
+#im1{
+    width: 1000px;
+    height: 500px;
+    margin: 10px;
 }
-
-.retropc h2 {
+.item3{
+    width: 300px;
+    height:500px ;
+    background-color: rgb(58, 59, 59);
+    margin: 10px;
+    align-self: center;
+}
+ul {
+   list-style-type:none; 
+}
+.content{
+    flex-direction: row;
+    margin: 10px;
+}
+#hh {
+    color: red;
+}
+#tt {
+    color:hsl(35, 77%, 62%) ;
+    margin: 10px;
+}
+#bb {
+    background-color: black;
+    color: white;
+}
+#x1 {
+    color: white;
+    margin: 10px;
+}
+#uu {
+    margin: 10px;
+}
+#tw{
+    margin: 10px;
+    color:hsl(35, 77%, 62%) ;
+}
+#gg{
     color: hsl(233, 8%, 79%);
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
-
-.retropc p {
-    color: hsl(236, 13%, 42%);
-    font-size: 15px;
-    padding-top: 20px;
-}
-
- 
